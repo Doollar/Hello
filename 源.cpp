@@ -1,25 +1,28 @@
 #include <stdio.h>
 
-//int main()
-//{
-//	int a = 10;
-//	//int b = a++; //后置++，先使用，再++ 11 10
-//	int b = ++a;  //前置++，先++，再使用 11 11
-//	printf("a = %d b = %d\n", a, b);
-//	return 0;
-//}
+//函数的实现
+int Max(int x,int y)
+{
+	if (x > y)
+		return x;
+	else
+		return y;
+}
+
+//宏的定义
+#define MAX(X,Y) (X>Y?X:Y)
 
 int main()
 {
-	int a = 100;
+	//int a = MAX;
+	int a = 10;
 	int b = 20;
-	int max = 0;
-
-	max = (a > b ? a : b);
-	/*if (a > b)
-		max = a;
-	else
-		max = b;*/
-	printf("%d\n", max);
+	//函数
+	int max = MAX(a, b);
+	printf("max = %d\n", max);
+	//宏的实现
+	max = MAX(a, b);
+	//max = (a>b?a:b);
+	printf("max = %d\n", max);
 	return 0;
 }
