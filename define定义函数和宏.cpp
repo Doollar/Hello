@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//º¯ÊýµÄÊµÏÖ
+//å‡½æ•°çš„å®žçŽ°
 int Max(int x,int y)
 {
 	if (x > y)
@@ -9,7 +9,7 @@ int Max(int x,int y)
 		return y;
 }
 
-//ºêµÄ¶¨Òå
+//å®çš„å®šä¹‰
 #define MAX(X,Y) (X>Y?X:Y)
 
 int main()
@@ -17,10 +17,10 @@ int main()
 	//int a = MAX;
 	int a = 10;
 	int b = 20;
-	//º¯Êý
+	//å‡½æ•°
 	int max = MAX(a, b);
 	printf("max = %d\n", max);
-	//ºêµÄÊµÏÖ
+	//å®çš„å®žçŽ°
 	max = MAX(a, b);
 	//max = (a>b?a:b);
 	printf("max = %d\n", max);
